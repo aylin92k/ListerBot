@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonctionnalités | ListerBot</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7067/7067977.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Section Héro -->
+<section class="hero" style="padding: 4rem 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="animate__animated animate__fadeInDown">Fonctionnalités & Capacités</h1>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s">Découvrez toutes les puissantes fonctionnalités de notre bot d’analyse de serveur Discord</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Fonctionnalités détaillées -->
+<section class="features-detailed">
+    <div class="container">
+
+        <!-- Infos Serveur -->
+        <div class="row align-items-center py-5 border-bottom border-secondary">
+            <div class="col-lg-6 mb-4 mb-lg-0 animate-on-scroll">
+                <h2 class="mb-3">Récupération des informations du serveur</h2>
+                <p class="lead mb-4">Toutes les données du serveur à portée de main</p>
+                <p>Notre bot peut récupérer des informations détaillées sur n'importe quel serveur Discord dont il est membre, en utilisant l'ID unique du serveur. Idéal pour les admins et membres curieux de leur communauté.</p>
+                <h5 class="mt-4 mb-3">Vous obtiendrez :</h5>
+                <ul>
+                    <li>Nom et ID du serveur</li>
+                    <li>Région du serveur et niveau de vérification</li>
+                    <li>Nombre de membres (total, en ligne, hors ligne)</li>
+                    <li>Statistiques des salons (textuels, vocaux, catégories)</li>
+                    <li>Infos et hiérarchie des rôles</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 text-center animate-on-scroll">
+                <img src="https://cdn-icons-png.flaticon.com/512/6012/6012113.png" alt="Informations Serveur" class="img-fluid" style="max-width: 300px;">
+            </div>
+        </div>
+
+        <!-- Date de création -->
+        <div class="row align-items-center py-5 border-bottom border-secondary flex-row-reverse">
+            <div class="col-lg-6 mb-4 mb-lg-0 animate-on-scroll">
+                <h2 class="mb-3">Affichage de la date de création</h2>
+                <p class="lead mb-4">Découvrez quand les communautés ont été fondées</p>
+                <p>Notre bot affiche la date et l’heure exactes de création de tout serveur Discord. Parfait pour comprendre l’histoire et l’ancienneté d’une communauté.</p>
+                <h5 class="mt-4 mb-3">Ce que vous verrez :</h5>
+                <ul>
+                    <li>Date de création précise avec heure</li>
+                    <li>Calcul de l’ancienneté (jours, mois, années)</li>
+                    <li>Affichage adapté à votre fuseau horaire</li>
+                    <li>Contexte historique du lancement du serveur</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 text-center animate-on-scroll">
+                <div class="feature-display p-4 bg-dark rounded">
+                    <div class="server-info-card p-4 bg-secondary bg-opacity-25 rounded text-start">
+                        <h4><i class="fas fa-server me-2"></i> Serveur Exemple</h4>
+                        <p><strong>Créé le :</strong> 15 mars 2020 à 14:32:45 UTC</p>
+                        <p><strong>Âge du serveur :</strong> 3 ans, 5 mois, 12 jours</p>
+                        <p><strong>ID :</strong> 123456789012345678</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Icône du serveur -->
+        <div class="row align-items-center py-5 border-bottom border-secondary">
+            <div class="col-lg-6 mb-4 mb-lg-0 animate-on-scroll">
+                <h2 class="mb-3">Affichage de l’icône du serveur</h2>
+                <p class="lead mb-4">Représentation visuelle de l'identité du serveur</p>
+                <p>Notre bot affiche automatiquement l’icône du serveur en haute résolution. Pratique pour identifier rapidement les serveurs et rendre l’analyse visuelle.</p>
+                <h5 class="mt-4 mb-3">Fonctionnalités de l’icône :</h5>
+                <ul>
+                    <li>Affichage haute qualité</li>
+                    <li>Téléchargement possible</li>
+                    <li>Support des icônes animées (si activé)</li>
+                    <li>Image par défaut si aucune icône</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 text-center animate-on-scroll">
+                <div class="icon-display bg-dark rounded p-4">
+                    <div class="rounded-circle mx-auto mb-3" style="width: 150px; height: 150px; background-color: #7289DA; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-users fa-4x text-white"></i>
+                    </div>
+                    <p class="text-center mt-3">server-icon.png</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Liste des membres -->
+        <div class="row align-items-center py-5 flex-row-reverse">
+            <div class="col-lg-6 mb-4 mb-lg-0 animate-on-scroll">
+                <h2 class="mb-3">Liste des membres</h2>
+                <p class="lead mb-4">Vue d’ensemble complète des membres du serveur</p>
+                <p>Le bot fournit une liste détaillée de tous les membres du serveur, avec des informations sur chaque utilisateur. Idéal pour la gestion de communauté.</p>
+                <h5 class="mt-4 mb-3">Détails disponibles :</h5>
+                <ul>
+                    <li>Nom d’utilisateur et discriminant</li>
+                    <li>ID utilisateur (modération)</li>
+                    <li>Affichage de l’avatar</li>
+                    <li>Rôles et permissions</li>
+                    <li>Date de création du compte</li>
+                    <li>Date d’arrivée sur le serveur</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 text-center animate-on-scroll">
+                <img src="https://cdn-icons-png.flaticon.com/512/2666/2666505.png" alt="Liste des membres" class="img-fluid" style="max-width: 300px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technologies utilisées -->
+<section class="technologies bg-dark py-5">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-12">
+                <h2 class="mb-3">Technologies utilisées</h2>
+                <p class="lead">Construit avec des technologies fiables et puissantes</p>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-6 mb-4 text-center animate-on-scroll">
+                <div class="tech-icon mb-3">
+                    <i class="fab fa-python fa-3x"></i>
+                </div>
+                <h5>Python</h5>
+                <p>Fonctionnalité principale du bot</p>
+            </div>
+            <div class="col-md-3 col-6 mb-4 text-center animate-on-scroll">
+                <div class="tech-icon mb-3">
+                    <i class="fas fa-code fa-3x"></i>
+                </div>
+                <h5>Discord.py</h5>
+                <p>Intégration avec l’API Discord</p>
+            </div>
+            <div class="col-md-3 col-6 mb-4 text-center animate-on-scroll">
+                <div class="tech-icon mb-3">
+                    <i class="fas fa-desktop fa-3x"></i>
+                </div>
+                <h5>PyQt5</h5>
+                <p>Interface utilisateur élégante</p>
+            </div>
+            <div class="col-md-3 col-6 mb-4 text-center animate-on-scroll">
+                <div class="tech-icon mb-3">
+                    <i class="fas fa-shield-alt fa-3x"></i>
+                </div>
+                <h5>OAuth2</h5>
+                <p>Authentification sécurisée</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Appel à l'action -->
+<section class="cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="mb-4">Testez toutes ces fonctionnalités dès maintenant</h2>
+                <p class="lead mb-4">Ajoutez notre bot à votre serveur Discord et découvrez la puissance de l’analyse serveur.</p>
+                <a href="https://discord.com/oauth2/authorize?client_id=1352767421647290409&permissions=8&integration_type=0&scope=bot" target="_blank" class="btn btn-discord btn-lg">
+                    <i class="fab fa-discord me-2"></i> Ajouter à Discord
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

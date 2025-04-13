@@ -1,0 +1,224 @@
+:root {
+    /* Discord-like colors */
+    --discord-dark: #36393f;
+    --discord-darker: #2f3136;
+    --discord-darkest: #202225;
+    --discord-light: #dcddde;
+    --discord-accent: #7289da;
+    --discord-accent-hover: #5e78d5;
+    --discord-green: #43b581;
+    --discord-red: #f04747;
+}
+
+body {
+    background-color: var(--discord-dark);
+    color: var(--discord-light);
+    font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--discord-darkest) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: var(--discord-light) !important;
+    margin: 0 0.5rem;
+    transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: white !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero section */
+.hero {
+    background-color: var(--discord-darker);
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+}
+
+/* Features section */
+.features {
+    padding: 5rem 0;
+}
+
+.feature-card {
+    background-color: var(--discord-darker);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+/* CTA section */
+.cta {
+    background-color: var(--discord-darkest);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+/* Buttons */
+.btn-discord {
+    background-color: var(--discord-accent);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.btn-discord:hover {
+    background-color: var(--discord-accent-hover);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: var(--discord-darkest);
+    padding: 3rem 0;
+    color: var(--discord-light);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: var(--discord-light);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+/* Use cases section */
+.use-case-card {
+    background-color: var(--discord-darker);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    height: 100%;
+}
+
+.use-case-card h3 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Terms and Privacy pages */
+.page-content {
+    background-color: var(--discord-darker);
+    border-radius: 8px;
+    padding: 3rem;
+    margin: 3rem 0;
+}
+
+.page-content h2 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.page-content h3 {
+    color: white;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+    }
+    
+    .cta h2 {
+        font-size: 2rem;
+    }
+    
+    .page-content {
+        padding: 2rem;
+    }
+}

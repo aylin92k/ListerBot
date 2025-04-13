@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListerBot</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3558/3558860.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://cdn.discordapp.com/app-icons/1352767421647290409/b3e6fdb6ab5a6ef5b81d49d4c890392c.png?size=256&quot" alt="Analyseur Bot" width="30" height="30" class="d-inline-block align-top me-2">
+                Analyseur de Serveur
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link {% if active_page == 'home' %}active{% endif %}" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if active_page == 'features' %}active{% endif %}" href="features.html">Fonctionnalités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if active_page == 'use-cases' %}active{% endif %}" href="use-cases.html">Cas d’usage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-discord ms-2" href="https://discord.com/oauth2/authorize?client_id=1352767421647290409&permissions=8&integration_type=0&scope=bot" target="_blank">Ajouter sur Discord</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
+                    <h1 class="animate__animated animate__fadeInDown">Analyse ton serveur Discord</h1>
+                    <p class="animate__animated animate__fadeInUp animate__delay-1s">Obtiens des analyses complètes de ton serveur Discord grâce à notre bot puissant. Affiche les statistiques, les membres et bien plus encore dans une interface élégante.</p>
+                    <a href="https://discord.com/oauth2/authorize?client_id=1352767421647290409&permissions=8&integration_type=0&scope=bot" target="_blank" class="btn btn-discord btn-lg animate__animated animate__fadeInUp animate__delay-2s">
+                        <i class="fab fa-discord me-2"></i> Ajouter sur Discord
+                    </a>
+                </div>
+                <div class="col-lg-6 text-center animate__animated animate__fadeInRight animate__delay-1s">
+                    <img src="https://cdn.discordapp.com/app-icons/1352767421647290409/b3e6fdb6ab5a6ef5b81d49d4c890392c.png?size=256&quot" alt="Logo Bot Discord" class="img-fluid" style="max-width: 350px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="mb-3">Fonctionnalités clés</h2>
+                    <p class="lead">Découvre ce que notre bot peut faire pour ton serveur</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4 animate-on-scroll">
+                    <div class="feature-card text-center h-100">
+                        <img src="https://cdn-icons-png.flaticon.com/512/11083/11083341.png" alt="Analyse Serveur" class="feature-icon">
+                        <h3>Informations du serveur</h3>
+                        <p>Récupère les informations essentielles du serveur avec son ID : date de création, icône et bien plus dans une interface claire.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate-on-scroll">
+                    <div class="feature-card text-center h-100">
+                        <img src="https://cdn-icons-png.flaticon.com/512/921/921347.png" alt="Liste Membres" class="feature-icon">
+                        <h3>Détails des membres</h3>
+                        <p>Consulte la liste complète des membres avec pseudos, identifiants Discord et photos de profil.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate-on-scroll">
+                    <div class="feature-card text-center h-100">
+                        <img src="https://cdn-icons-png.flaticon.com/512/11933/11933702.png" alt="Outil d’Audit" class="feature-icon">
+                        <h3>Analyse visuelle</h3>
+                        <p>Visualise tes données via une interface sombre et stylée, parfaite pour les audits communautaires.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works bg-dark">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="mb-3">Comment ça marche</h2>
+                    <p class="lead">Utiliser le bot Discord est simple et rapide</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4 animate-on-scroll">
+                    <div class="text-center">
+                        <div class="circle-step mb-3">1</div>
+                        <h3>Ajoute le bot</h3>
+                        <p>Invite le bot dans ton serveur en quelques clics grâce au lien d'autorisation.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate-on-scroll">
+                    <div class="text-center">
+                        <div class="circle-step mb-3">2</div>
+                        <h3>Utilise les commandes</h3>
+                        <p>Envoie des commandes simples pour obtenir des infos sur ton serveur et ses membres.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate-on-scroll">
+                    <div class="text-center">
+                        <div class="circle-step mb-3">3</div>
+                        <h3>Analyse les données</h3>
+                        <p>Accède instantanément à des analyses claires et détaillées dans une belle interface.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="mb-4">Prêt à analyser ton serveur ?</h2>
+                    <p class="lead mb-4">Ajoute notre bot Discord dès maintenant pour débloquer tout le potentiel de ton serveur.</p>
+                    <a href="https://discord.com/oauth2/authorize?client_id=1352767421647290409&permissions=8&integration_type=0&scope=bot" target="_blank" class="btn btn-discord btn-lg">
+                        <i class="fab fa-discord me-2"></i> Ajouter sur Discord
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Analyseur de Serveur</h5>
+                    <p>Une analyse puissante de ton serveur Discord. Obtiens des informations claires sur ta communauté grâce à notre bot dédié.</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5 class="mb-3">Liens</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="features.html">Fonctionnalités</a></li>
+                        <li><a href="use-cases.html">Cas d’usage</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5 class="mb-3">Légal</h5>
+                    <ul class="footer-links">
+                        <li><a href="terms.html">Conditions d'utilisation</a></li>
+                        <li><a href="privacy.html">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Réseaux sociaux</h5>
+                    <div class="social-icons">
+                        <a href="https://discord.gg/uaQBqsGGWa" target="_blank" class="me-3"><i class="fab fa-discord fa-2x"></i></a>
+                        <a href="https://github.com/aylin92k" target="_blank" class="me-3"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="https://x.com/dev_aylin" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center copyright">
+                    <p>&copy; 2025 ListerBot. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
